@@ -29,7 +29,7 @@ secrets.REPOSITORY_NAME }}:${{ github.run_number }}
  uses: 'azure/aci-deploy@v1'
  with:
  resource-group: ${{ secrets.RESOURCE_GROUP }}
- dns-name-label: ${{ secrets.RESOURCE_GROUP }}
+ dns-name-label: 'timoregistry'
  image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/${{ secrets.REPOSITORY_NAME }}:${{ 
 github.run_number }}
  registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
